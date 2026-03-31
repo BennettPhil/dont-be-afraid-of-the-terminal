@@ -1,4 +1,4 @@
-```
+```markdown
 # App Setup
 
 I want to build a[n]

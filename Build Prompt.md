@@ -1,7 +1,7 @@
 ## Template
 
 
-```
+```markdown
 ## Mode: Build | Debug | Review | Explore]
 
 ## Goal
@@ -26,7 +26,7 @@
 
 ## Pomodoro Timer
 
-```
+```markdown
 ## Mode: Build
 
 ## Goal
@@ -48,7 +48,7 @@ Please make sure the application is thoroughly tested before delivery, and build
 ## Task Manager
 
 
-```
+```markdown
 ## Mode: Build
 
 ## Goal
@@ -70,7 +70,7 @@ Build a simple task manager app that lets me manage a to-do list.
 ```
 ## Chrome Extension
 
-```
+```markdown
 ## Mode: Build
 
 ## Goal
