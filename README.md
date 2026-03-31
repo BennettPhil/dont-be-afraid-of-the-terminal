@@ -36,6 +36,14 @@ A sub-agent is like giving your coding agent a specialist helper. Pick the guide
 
 ---
 
+## Slides
+
+Want to revisit the presentation from the workshop? You can view the full slide deck here:
+
+[View the slides](slides/Don't%20Be%20Afraid%20Of%20The%20Terminal/index.html) | [Download as PDF](slides/Don't%20Be%20Afraid%20Of%20The%20Terminal.pdf)
+
+---
+
 ## Quick Reference
 
 | What you need to do | Where to find it |
