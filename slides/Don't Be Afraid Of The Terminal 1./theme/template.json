@@ -1,0 +1,16 @@
+{
+  "Name" : "Wild Terminal",
+  "ShortDescription" : "Where the Wild Things Are meets retro computing",
+  "LongDescription" : "A storybook-inspired theme featuring furry CRT-headed monsters on aged parchment. Playful, warm, and just a little bit wild.",
+  "TitleFont" : "Sundowners",
+  "BodyFont" : "Helvetica",
+  "Version" : 1,
+  "Author" : "Phil",
+  "Css" : "wild terminal.css",
+  "Layouts" : [
+    {
+      "Name" : "Cover",
+      "Classes" : ""
+    }
+  ]
+}

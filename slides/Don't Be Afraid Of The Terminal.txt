@@ -1,0 +1,461 @@
+# Don't Be Afraid Of The Terminal
+
+![](media/ChatGPT Image Mar 29, 2026, 11_10_31 AM (1).png)
+
+This session is about getting comfortable with the terminal and seeing it as a simple way to work with modern coding agents.
+
+---
+## If Windows users don't have WSL installed, start it now.
+
+
+If anyone on Windows still needs WSL, starting now prevents delays later. Everything else depends on having a Unix-style terminal available.
+
+---
+# Why we're here
+
+We are not here to turn everyone into software engineers. We are here to make the terminal feel useful, practical, and much less intimidating.
+
+---
+# Phil
+	- Engineering Leadership Consultant
+	- Brit "stuck" in Berlin
+	- 25+ years in software engineering & leadership
+	- Author of "Punk Leadership"
+	- Founder of Brainfork, an AI knowledge management platform
+	- Fixer of unfixable engineering teams
+
+
+![](media/DSC08636 (1).jpeg)
+
+This is a quick introduction so the audience knows why I care about this topic and why I think these tools are now practical for non-specialists.
+
+---
+# Igor
+	- Founder of HandPicked Berlin
+	- ==[Needs Igor's input]==
+
+![](media/1720093791436.jpeg)
+
+Igor brings the founder and operator perspective. The point is that this workflow is not only for engineers; it is for people trying to get real work done.
+
+---
+## What we built: a brief list from both of us
+
+- Phil: Personal Outreach Agent
+- Phil: CMS Replacement
+- Phil: All of Brainfork
+- Igor: Email extractor/newsroom
+- Igor: Personal task manager
+- Igor: Newsletter strategy workshop
+- Igor: Firefox extension
+
+These are practical examples, not demo theatre. Small, useful tools are enough to justify learning this way of working.
+
+---
+# The Terminal
+
+The terminal looks unfamiliar, but it is just a text interface for giving precise instructions. That turns out to suit AI agents very well.
+
+---
+# The Problem
+### Computers think like this 👇
+```
+; **Register usage**
+; R1 -- input data pointer
+; R2 -- most recent value
+;
+x3000 **LD R1, x006**        ; load data pointer
+x3001 **LDR R2, R1, #0**     ; load data value
+x3002 **BRz x005**           ; branch to end if zero
+;
+; repeating statements go here
+;
+x3003 **ADD R1, R1, #1**     ; increment data pointer
+x3004 **BRnzp x001**         ; branch back to top
+x3005 **HALT**
+;
+; data section
+;
+x3006 **x4000** ; address of data
+```
+
+Historically, computers wanted extremely literal, low-level instructions. That made software creation feel inaccessible to most people.
+
+---
+### Humans think like this 👉
+
+![](media/ChatGPT Image Mar 29, 2026, 10_57_30 AM.png)
+
+Humans think in goals, stories, and rough intent. We start with outcomes, not memory addresses.
+
+---
+![](media/ChatGPT Image Mar 29, 2026, 10_54_45 AM.png)
+
+This is the gap we used to bridge manually. A lot of programming was translating messy human intent into rigid machine steps.
+
+---
+### ==Development of Programming Languages==
+
+Programming languages kept moving closer to human language and further from raw machine logic. Each step made computers more usable.
+
+---
+![](media/ChatGPT Image Mar 29, 2026, 10_56_04 AM.png)
+
+Every layer of abstraction removed some pain. We did not make computers smarter; we made the interface kinder.
+
+---
+
+![](media/ChatGPT Image Mar 29, 2026, 11_00_25 AM.png)
+
+Coding agents are the next step in that same story. Natural language is becoming a workable interface for building software.
+
+---
+# Suddenly, "magic happened"
+
+It can look like magic, but it is better understood as a major interface shift. The computer can now work from intent much more directly.
+
+---
+
+![](media/Frame 1 (7).png)
+
+This is the jump from tools that only execute commands to tools that can plan, edit, run, and check work for you.
+
+---
+## 	 “Agents will replace all software”
+	Satya Nadella, Microsoft CEO
+
+![](media/ChatGPT Image Mar 29, 2026, 04_34_07 PM (1).png)
+
+This quote is intentionally provocative. I would not take it literally, but it captures how seriously large companies are taking agentic software.
+
+---
+# Agent
+### (noun) /ˈeɪdʒ(ə)nt/
+	A person or thing that takes an active role or produces a specified effect.
+
+The key word here is active. An agent does not just answer questions; it can take actions towards a goal.
+
+---
+### 	> "Pretty much 100% of our code is written by Claude Code + Opus 4.5"
+	- Boris Cherny, Claude Code Engineer
+
+This example shows how fast the norms are changing in some teams. Even if the percentage is lower for you, the direction of travel is clear.
+
+---
+
+![](media/821f4316-6fb0-43b3-bab0-8afc16147c0c_2990x2160 (1).webp)
+
+
+The important shift is that software can now be shaped through conversation plus verification, not only through manual typing.
+
+---
+![](media/Hero Image.png)
+
+
+### Claude Code
+	* Anthropic
+	* Launched in Feb 2025
+	* CLI and IDE plugin
+	* "Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser."
+
+![](media/Hero Image (1).png)
+
+
+### Codex
+	* OpenAI
+	* Launched in May 2025
+	* CLI, IDE plugin, and app
+	* "Codex is OpenAI’s coding agent for software development."
+
+You do not need to memorise the brands. What matters is that both tools can read code, make edits, run commands, and explain what they are doing.
+
+---
+# Hands-on
+### Open a Terminal
+### Get The Docs 👉
+
+![](media/qrcode_bennettphil.github.io.png)
+
+	https://bennettphil.github.io/dont-be-afraid-of-the-terminal/
+
+
+
+From here on, the goal is muscle memory, not theory. Open the terminal and get comfortable looking at it.
+
+---
+## The Most Important Step!
+### Pick a Nice Colour
+	* macOS Terminal: Terminal -> Settings -> Profile (select Colour, choose "Default")
+	* ==Check on Windows machine==
+
+This sounds trivial, but it matters. If the tool feels welcoming, people are more likely to keep using it.
+
+---
+# Install Dependencies
+
+## Windows
+### 1. Set up WSL
+### 2. Install Homebrew
+### 3. Install Node.js (for Codex only)
+
+
+## macOS
+### 1. Install Homebrew
+### 2. Install Node.js (for Codex only)
+
+We only need a small amount of setup. Once these basics are in place, using an agent becomes much easier.
+
+---
+# Install & Start an Agent
+
+## Claude Code
+	`> brew install claude-code`
+	`> claude`
+
+## Codex
+	`> npm install @openai/codex`
+	`> codex`
+
+These are the minimum commands to get into a working session. The important thing is to start simple and confirm the tool launches.
+
+---
+# Slash Commands
+	You might be familiar with this from Slack, Telegram, etc.
+
+	`/[some command]`
+
+Slash commands are just shortcuts for common actions. Think of them as the tool's control panel.
+
+---
+# Choose a Model and "Thinking Level"
+### More "Power" = More Cost
+
+## Claude
+	`/model`
+	- Opus: more powerful, use for more complicated tasks
+	- Sonnet: cheaper, use for simpler everyday tasks
+
+	---
+	`/effort auto`
+	You can turn this up later if you need to.
+
+## Codex
+	`/model`
+	- gpt-5.4: most powerful current model. Expensive, but good for complex tasks
+	- gpt-5.4-mini: cheaper, use for simpler everyday tasks
+
+	---
+	Set Reasoning to "medium" for now; it can be turned up later
+
+This is the first trade-off to learn: capability versus cost. Start cheap and simple, then increase power only when the task demands it.
+
+---
+
+# Prompting
+### The "Enthusiastic Intern" model
+
+My default mental model is an enthusiastic intern: capable, fast, and useful, but much better with clear direction.
+
+---
+
+![](media/Frame 3 (3).png)
+
+
+Good results come from giving context, constraints, and a clear definition of done. Vague prompts create vague work.
+
+---
+
+
+# Setup
+### We will start by building the structure of our application.
+
+
+	```
+	# App Setup
+
+	I want to build a[n]
+
+	[desktop app that runs on Mac and/or Windows.]
+	[a mobile app that runs on iOS or Android]
+	[a web app]
+	[a Chrome browser extension]
+
+	Here is what it needs to do:
+
+	[YOUR BRIEF HERE]
+
+	Based on my requirements, choose the most appropriate framework and
+	approach for a project of this scale. Explain your choice in plain
+	English before you start.
+
+	Then:
+	1. Scaffold the full project structure
+	2. Install all dependencies
+	3. Get it running so I can see the app window open on my machine
+	4. Run /init to generate a [CLAUDE.md/AGENTS.md]
+	5. Do not actually build the feature or project; we will do that in a later step
+	6. Add the following block to the TOP of that [CLAUDE.md/AGENTS.md]
+
+	---
+	# About Me
+	I have no coding or technical background. This may be the first time
+	I've ever used a terminal or coding tool. Please treat me accordingly.
+
+	# How to Communicate With Me
+	- Explain what a command does BEFORE showing it to me
+	- Translate error messages into plain English - don't assume I can read them
+	- Give me one clear path forward, not options and tradeoffs
+	- Use numbered steps when asking me to do something
+	- Check in after each significant step before moving on
+
+	Before any significant action, tell me: what we're doing,
+	what will happen, and whether it can be undone.
+
+	Tone: encouraging, jargon-free, treat all questions as normal questions.
+
+	## My Goal
+	I want to feel in control of what we're building - prioritise my
+	confidence and comprehension over speed or technical elegance.
+	---
+	When everything is running, tell me: what I should see, where to find
+	it, and what we're building next.
+	```
+
+This is the starter prompt I would give a beginner. It asks the agent to choose the stack, set things up, and communicate clearly.
+
+---
+# Build
+### Now we build
+
+	```
+	## Mode: Build | Debug | Review | Explore
+
+	## Goal
+	[One clear sentence: what should exist or be true when you're done?]
+
+	## Context
+	- Relevant files: [list them or say "see src/auth/"]
+	- Constraints: [e.g. "must not touch the DB layer", "iOS compatible"]
+	- Related issue/ticket: [link or description]
+
+	## What I've Already Tried (Debug mode only)
+	[Error message, logs, what you ruled out]
+
+	## Acceptance Criteria
+	- [ ] [Specific, testable outcome]
+	- [ ] [Another outcome]
+
+	## Notes
+	[Any edge cases, preferences, or things to watch out for]
+	```
+
+Once the project exists, prompts should become more structured. Clear goals, constraints, and acceptance criteria lead to much better output.
+
+---
+# Debug
+### Something *will* break; no software is perfect.
+
+	```
+	## Mode:  Debug
+
+	## Expected Behaviour
+	A few short sentences about what you expected the software to do. Include what you were doing when the problem happened.
+
+	## Current Behaviour
+	A few short sentences about what is happening instead.
+
+	## Context
+	- Relevant files/paths: [list them or say "see src/auth/"]
+	- Any error messages that you see when the problem occurs
+	- Any log files that exist and can be checked
+	- Related issue/ticket: [link or description]
+
+	## What I've Already Tried
+	A list of everything you've tried
+
+	## Acceptance Criteria
+	- [ ] [Specific, testable outcome]
+	- [ ] [Another outcome]
+
+	## Notes
+	[Any edge cases, preferences, or things to watch out for]
+	```
+
+Debugging works best when you describe the gap between expected behaviour and actual behaviour. That gives the agent something concrete to investigate.
+
+---
+# Advanced Topics
+## - Sub-agents
+## - Skills
+
+![](media/ChatGPT Image Mar 31, 2026, 11_14_23 AM.png)
+
+
+Once the basics feel normal, you can start composing more advanced behaviours. That is where these tools become really powerful.
+
+---
+
+
+![](media/ChatGPT Image Mar 31, 2026, 03_36_26 PM.png)
+
+
+# Sub-agents
+## Add *me* to your project!
+
+A sub-agent is like giving the tool a specialist helper or a second pair of hands. It is useful when a task can be split into independent parts.
+
+---
+# Sub-agents
+
+## Claude
+### Easy
+	`/agents`
+	Paste in the sub-agent prompt
+
+
+## Codex
+### Less Easy
+	Follow the guide on the site.
+
+Claude makes this comparatively easy. Codex can do it too, but the workflow is a bit more manual.
+
+---
+# Skills
+## Add *anyone* to your project
+
+![](media/ChatGPT Image Mar 31, 2026, 04_23_20 PM.png)
+
+
+Skills are reusable instructions or workflows. They let you add expertise without rewriting the same prompt every time.
+
+---
+# Skills
+## https://skills.sh/
+	Add a frontend design skill to your project:
+	`npx skills add https://github.com/anthropics/skills --skill frontend-design`
+
+This is a concrete example: install a skill once, then reuse it whenever you need that capability.
+
+---
+# Homework
+	> ### "Move Fast, Break Things"
+	Work on your project for a few hours and see what you can achieve.
+
+![](media/ChatGPT Image Mar 31, 2026, 04_37_15 PM.png)
+
+
+The point of the homework is not polish. It is to spend enough time with the tool that the fear drops and the patterns start feeling familiar.
+
+---
+# Next Week
+#### - "Open Office": review issues and provide hands-on support
+#### - Show and Tell: show us what you made
+#### - What next: distribution, multi-agent orchestration
+
+Next week we will look at what people built, unblock problems, and talk about how to take projects further.
+
+---
+## Good luck, see you next week!
+
+If you remember one thing, let it be this: you do not need to understand everything up front. You just need to start and stay curious.
+

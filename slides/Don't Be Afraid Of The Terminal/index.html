@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+<style>
+:root{
+--logo: /assets/chatgpt image mar 29, 2026, 11_10_31 am (1).png;
+--logo-size: ;
+--text-scale-intensity: ;
+--darkaccent1color: #7ABF4E;
+--lightaccent1color: #3D6B28;
+--accent2: #C4841D;
+--accent3: #8B4513;
+--accent4: #6B8E3A;
+--accent5: #B55A30;
+--accent6: #3D6B5E;
+--lighttitletextcolor: #2D1B0E;
+--darktitletextcolor: #F5E6D0;
+--lightbodytextcolor: #2D1B0E;
+--darkbodytextcolor: #F0DFC4;
+--lightbackgroundcolor: transparent;
+--darkbackgroundcolor: #1E120A;
+--bodyfont: Helvetica;
+--titlefont: sundowners;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+</style>
+<link rel="stylesheet" href="engine/main.css">
+<link rel="stylesheet" href="theme/wild terminal.css">
+<link rel="stylesheet" href="engine/katex/katex.min.css">
+</head>
+<body class="responsive ">
+<div class="reveal">
+<div class="slides">
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="dontbeafraidoftheterminal">Don't Be Afraid Of The Terminal</h1>
+ </div> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 11_10_31 AM (1).png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title slide-contents"> 
+ <div class="element-group">
+  <h2 id="ifwindowsusersdonthavewslinstalledstartitnow.">If Windows users don't have WSL installed, start it now.</h2>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="whywerehere">Why we're here</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="phil">Phil</h1> 
+  <ul> 
+   <li>Engineering Leadership Consultant</li> 
+   <li>Brit "stuck" in Berlin</li> 
+   <li>25+ years in software engineering &amp; leadership</li> 
+   <li>Author of "Punk Leadership"</li> 
+   <li>Founder of Brainfork, an AI knowledge management platform</li> 
+   <li>Fixer of unfixable engineering teams</li> 
+  </ul>
+ </div> 
+ <figure class="">
+  <img src="media/DSC08636 (1).jpeg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="igor">Igor</h1> 
+  <ul> 
+   <li>Founder of HandPicked Berlin</li> 
+   <li><mark>[Needs Igor's input]</mark></li> 
+  </ul>
+ </div> 
+ <figure class="">
+  <img src="media/1720093791436.jpeg" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title slide-contents"> 
+ <div class="element-group">
+  <h2 id="whatwebuilt:abrieflistfrombothofus">What we built: a brief list from both of us</h2>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="theterminal">The Terminal</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <h1 id="theproblem">The Problem</h1> 
+  <h3 id="computersthinklikethis👇">Computers think like this 👇</h3> 
+  <pre><code>;&nbsp;**Register usage**
+; R1 -- input data pointer
+; R2 -- most recent value
+;
+x3000&nbsp;**LD R1,&nbsp;x006**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; load data pointer
+x3001&nbsp;**LDR R2, R1, #0**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; load data value
+x3002&nbsp;**BRz&nbsp;x005**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; branch to end if zero
+;
+; repeating statements go here
+;
+x3003&nbsp;**ADD R1, R1, #1**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; increment data pointer
+x3004&nbsp;**BRnzp&nbsp;x001**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; branch back to top
+x3005&nbsp;**HALT**
+;
+; data section
+;
+x3006&nbsp;**x4000**&nbsp;; address of data
+</code></pre>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h3 id="humansthinklikethis👉">Humans think like this 👉</h3>
+ </div> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 10_57_30 AM.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 10_54_45 AM.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark section-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-section slide-contents"> 
+ <div class="element-group"> 
+  <h3 id="developmentofprogramminglanguages"><mark>Development of Programming Languages</mark></h3> 
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 10_56_04 AM.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 11_00_25 AM.png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="suddenlymagichappened">Suddenly, "magic happened"</h1>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Frame 1 (7).png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h2 id="“agentswillreplaceallsoftware”">“Agents will replace all software”</h2> 
+  <p>Satya Nadella, Microsoft CEO</p>
+ </div> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 29, 2026, 04_34_07 PM (1).png" class=" position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="agent">Agent</h1> 
+  <h3 id="nounˈeɪdʒənt">(noun) /ˈeɪdʒ(ə)nt/</h3> 
+  <p>A person or thing that takes an active role or produces a specified effect.</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <h3 id="prettymuch100ofourcodeiswrittenbyclaudecodeopus4.5">&gt; "Pretty much 100% of our code is written by Claude Code + Opus 4.5"</h3> 
+  <ul> 
+   <li>Boris Cherny, Claude Code Engineer</li> 
+  </ul>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/821f4316-6fb0-43b3-bab0-8afc16147c0c_2990x2160 (1).webp" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid {@{HAS_MEDIA_CLASSES}@} slide-contents grid-items-4 media-grid"> 
+ <figure class="">
+  <img src="media/Hero Image.png" class=" size-contain position-center-center" />
+ </figure>
+ <div class="element-group">
+  <h3 id="claudecode">Claude Code</h3> 
+  <ul> 
+   <li>Anthropic</li> 
+   <li>Launched in Feb 2025</li> 
+   <li>CLI and IDE plugin</li> 
+   <li>"Claude Code is an agentic coding tool that reads your codebase, edits files, runs commands, and integrates with your development tools. Available in your terminal, IDE, desktop app, and browser."</li> 
+  </ul>
+ </div>
+ <figure class="">
+  <img src="media/Hero Image (1).png" class=" size-contain position-center-center" />
+ </figure>
+ <div class="element-group">
+  <h3 id="codex">Codex</h3> 
+  <ul> 
+   <li>OpenAI</li> 
+   <li>Launched in May 2025</li> 
+   <li>CLI, IDE plugin, and app</li> 
+   <li>"Codex is OpenAI’s coding agent for software development."</li> 
+  </ul>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title slide-contents"> 
+ <div class="element-group">
+  <h2 id="hands-on">Hands-on</h2> 
+  <h3 id="openaterminal">Open a Terminal</h3>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark default-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-default slide-contents"> 
+ <div class="element-group">
+  <h2 id="themostimportantstep">The Most Important Step!</h2> 
+  <h3 id="pickanicecolour">Pick a Nice Colour</h3> 
+  <ul> 
+   <li>macOS Terminal: Terminal -&gt; Settings -&gt; Profile (select Colour, choose "Default")</li> 
+   <li><mark>Check on Windows machine</mark></li> 
+  </ul>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-and-columns-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title-and-columns slide-contents columns-items-2 "> 
+ <div class="title-part element-group">
+  <h1 id="installdependencies">Install Dependencies</h1>
+ </div> 
+ <div class="column-part element-group">
+  <h2 id="windows">Windows</h2> 
+  <h3 id="1.setupwsl">1. Set up WSL</h3> 
+  <h3 id="2.installhomebrew">2. Install Homebrew</h3> 
+  <h3 id="3.installnode.jsforcodexonly">3. Install Node.js (for Codex only)</h3>
+ </div>
+ <div class="column-part element-group">
+  <h2 id="macos">macOS</h2> 
+  <h3 id="1.installhomebrew">1. Install Homebrew</h3> 
+  <h3 id="2.installnode.jsforcodexonly">2. Install Node.js (for Codex only)</h3>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-and-columns-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title-and-columns slide-contents columns-items-2 "> 
+ <div class="title-part element-group">
+  <h1 id="installstartanagent">Install &amp; Start an Agent</h1>
+ </div> 
+ <div class="column-part element-group">
+  <h2 id="claudecode">Claude Code</h2> 
+  <p><code>&gt; brew install claude-code</code></p> 
+  <p><code>&gt; claude</code></p>
+ </div>
+ <div class="column-part element-group">
+  <h2 id="codex">Codex</h2> 
+  <p><code>&gt; npm install @openai/codex</code></p> 
+  <p><code>&gt; codex</code></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents"> 
+ <div class="element-group">
+  <h1 id="slashcommands">Slash Commands</h1> 
+  <p>You might be familiar with this from Slack, Telegram, etc.</p>
+ </div> 
+ <div class="element-group">
+  <p><code>/[some command]</code></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark grid-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-grid {@{HAS_MEDIA_CLASSES}@} slide-contents grid-items-5 media-grid"> 
+ <div class="element-group">
+  <h1 id="chooseamodelandthinkinglevel">Choose a Model and "Thinking Level"</h1> 
+  <h3 id="morepowermorecost">More "Power" = More Cost</h3>
+ </div>
+ <div class="element-group">
+  <h2 id="claude">Claude</h2> 
+  <p><code>/model</code></p> 
+  <ul> 
+   <li>Opus: more powerful, use for more complicated tasks</li> 
+   <li>Sonnet: cheaper, use for simpler everyday tasks</li> 
+  </ul>
+ </div>
+ <div class="element-group">
+  <hr /> 
+  <p><code>/effort auto</code></p> 
+  <p>You can turn this up later if you need to.</p>
+ </div>
+ <div class="element-group">
+  <h2 id="codex">Codex</h2> 
+  <p><code>/model</code></p> 
+  <ul> 
+   <li>gpt-5.4: most powerful current model. Expensive, but good for complex tasks</li> 
+   <li>gpt-5.4-mini: cheaper, use for simpler everyday tasks</li> 
+  </ul>
+ </div>
+ <div class="element-group">
+  <hr /> 
+  <p>Set Reasoning to "medium" for now; it can be turned up later</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="prompting">Prompting</h1> 
+  <h3 id="theenthusiasticinternmodel">The "Enthusiastic Intern" model</h3>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark full-image-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-full-image slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/Frame 3 (3).png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents"> 
+ <div class="element-group">
+  <h1 id="setup">Setup</h1> 
+  <h3 id="wewillstartbybuildingthestructureofourapplication.">We will start by building the structure of our application.</h3>
+ </div> 
+ <div class="element-group">
+  <pre><code># App Setup
+
++++
+
+I want to build a[n]
+
++++
+
+[desktop app that runs on Mac and/or Windows.]
+[a mobile app that runs on iOS or Android]
+[a web app]
+[a Chrome browser extension]
+
++++
+
+Here is what it needs to do:
+
++++
+
+[YOUR BRIEF HERE]
+
++++
+
+Based on my requirements, choose the most appropriate framework and
+approach for a project of this scale. Explain your choice in plain
+English before you start.
+
++++
+
+Then:
+1. Scaffold the full project structure
+2. Install all dependencies
+3. Get it running so I can see the app window open on my machine
+4. Run /init to generate a [CLAUDE.md/AGENTS.md]
+5. Do not actually build the feature or project; we will do that in a later step
+6. Add the following block to the TOP of that [CLAUDE.md/AGENTS.md]
+
++++
+
+---
+# About Me
+I have no coding or technical background. This may be the first time
+I've ever used a terminal or coding tool. Please treat me accordingly.
+
++++
+
+# How to Communicate With Me
+- Explain what a command does BEFORE showing it to me
+- Translate error messages into plain English - don't assume I can read them
+- Give me one clear path forward, not options and tradeoffs
+- Use numbered steps when asking me to do something
+- Check in after each significant step before moving on
+
++++
+
+Before any significant action, tell me: what we're doing,
+what will happen, and whether it can be undone.
+
++++
+
+Tone: encouraging, jargon-free, treat all questions as normal questions.
+
++++
+
+## My Goal
+I want to feel in control of what we're building - prioritise my
+confidence and comprehension over speed or technical elegance.
+---
+When everything is running, tell me: what I should see, where to find
+it, and what we're building next.
+</code></pre>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents"> 
+ <div class="element-group">
+  <h1 id="build">Build</h1> 
+  <h3 id="nowwebuild">Now we build</h3>
+ </div> 
+ <div class="element-group">
+  <pre><code>## Mode: Build | Debug | Review | Explore
+
++++
+
+## Goal
+[One clear sentence: what should exist or be true when you're done?]
+
++++
+
+## Context
+- Relevant files: [list them or say "see src/auth/"]
+- Constraints: [e.g. "must not touch the DB layer", "iOS compatible"]
+- Related issue/ticket: [link or description]
+
++++
+
+## What I've Already Tried (Debug mode only)
+[Error message, logs, what you ruled out]
+
++++
+
+## Acceptance Criteria
+- [ ] [Specific, testable outcome]
+- [ ] [Another outcome]
+
++++
+
+## Notes
+[Any edge cases, preferences, or things to watch out for]
+</code></pre>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents"> 
+ <div class="element-group">
+  <h1 id="debug">Debug</h1> 
+  <h3 id="somethingwillbreaknosoftwareisperfect.">Something <em>will</em> break; no software is perfect.</h3>
+ </div> 
+ <div class="element-group">
+  <pre><code>## Mode:  Debug
+
++++
+
+## Expected Behaviour
+A few short sentences about what you expected the software to do. Include what you were doing when the problem happened.
+
++++
+
+## Current Behaviour
+A few short sentences about what is happening instead.
+
++++
+
+## Context
+- Relevant files/paths: [list them or say "see src/auth/"]
+- Any error messages that you see when the problem occurs
+- Any log files that exist and can be checked
+- Related issue/ticket: [link or description]
+
++++
+
+## What I've Already Tried
+A list of everything you've tried
+
++++
+
+## Acceptance Criteria
+- [ ] [Specific, testable outcome]
+- [ ] [Another outcome]
+
++++
+
+## Notes
+[Any edge cases, preferences, or things to watch out for]
+</code></pre>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="advancedtopics">Advanced Topics</h1> 
+  <h2 id="-sub-agents">- Sub-agents</h2> 
+  <h2 id="-skills">- Skills</h2>
+ </div> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 31, 2026, 11_14_23 AM.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 31, 2026, 03_36_26 PM.png" class=" size-contain position-center-center" />
+ </figure> 
+ <div class="element-group">
+  <h1 id="sub-agents">Sub-agents</h1> 
+  <h2 id="addmetoyourproject">Add <em>me</em> to your project!</h2>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-and-columns-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title-and-columns slide-contents columns-items-2 "> 
+ <div class="title-part element-group">
+  <h1 id="sub-agents">Sub-agents</h1>
+ </div> 
+ <div class="column-part element-group">
+  <h2 id="claude">Claude</h2> 
+  <h3 id="easy">Easy</h3> 
+  <p><code>/agents</code></p> 
+  <p>Paste in the sub-agent prompt</p>
+ </div>
+ <div class="column-part element-group">
+  <h2 id="codex">Codex</h2> 
+  <h3 id="lesseasy">Less Easy</h3> 
+  <p>Follow the guide on the site.</p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="skills">Skills</h1> 
+  <h2 id="addanyonetoyourproject">Add <em>anyone</em> to your project</h2>
+ </div> 
+ <figure class="">
+  <img src="media/ChatGPT Image Mar 31, 2026, 04_23_20 PM.png" class=" size-contain position-center-center" />
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="skills">Skills</h1> 
+  <h2 id="https:skills.sh">https://skills.sh/</h2> 
+  <p>Add a frontend design skill to your project:</p> 
+  <p><code>npx skills add https://github.com/anthropics/skills --skill frontend-design</code></p>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark v-split-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-v-split slide-contents media-grid"> 
+ <div class="element-group">
+  <h1 id="homework">Homework</h1> 
+  <blockquote lang="en"> 
+   <h3 id="movefastbreakthings">"Move Fast, Break Things"</h3> 
+   <p>Work on your project for a few hours and see what you can achieve.</p> 
+  </blockquote>
+ </div> 
+ <figure class=""> 
+  <img src="media/ChatGPT Image Mar 31, 2026, 04_37_15 PM.png" class=" size-contain position-center-center" /> 
+ </figure> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark cover-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-cover slide-contents"> 
+ <div class="element-group">
+  <h1 id="nextweek">Next Week</h1> 
+  <h4 id="-openoffice:reviewissuesandprovidehands-onsupport">- "Open Office": review issues and provide hands-on support</h4> 
+  <h4 id="-showandtell:showuswhatyoumade">- Show and Tell: show us what you made</h4> 
+  <h4 id="-whatnext:distributionmulti-agentorchestration">- What next: distribution, multi-agent orchestration</h4>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+<section class="dark title-container responsive" style="">
+<div class="header">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div> 
+<div class="layout-title slide-contents"> 
+ <div class="element-group">
+  <h2 id="goodluckseeyounextweek">Good luck, see you next week!</h2>
+ </div> 
+</div> 
+<div class="footnotes"></div> 
+<div class="footer">
+ <div class="leading"></div>
+ <div class="middle"></div>
+ <div class="trailing"></div>
+</div>
+</section>
+</div>
+</div>
+<script src="engine/index.js"></script>
+<script src="engine/pptxgen.min.js"></script>
+<script src="engine/pfill.js"></script>
+<script src="engine/published.js"></script>
+<script>
+Reveal.configure({
+progress:true,
+progress:true,
+dependencies: [
+  {
+    src: "engine/highlight.js",
+    sync: true,
+    callback: function () {
+      hljs.initHighlightingOnLoad();
+    },
+  },
+],
+});
+</script>
+</body>
+</html>
