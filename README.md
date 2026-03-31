@@ -44,10 +44,17 @@ Want to revisit the presentation from the workshop? You can view the full slide 
 
 ---
 
+## [Terminal Cheat Sheet](terminal-cheat-sheet.md)
+
+New to the terminal? This one-page reference covers every command you'll need during the workshop — navigating folders, managing files, keyboard shortcuts, and agent commands. Works for both macOS and Windows (WSL).
+
+---
+
 ## Quick Reference
 
 | What you need to do | Where to find it |
 |---|---|
+| Look up a terminal command | [Terminal Cheat Sheet](terminal-cheat-sheet.md) |
 | Set up your machine | [Install Dependencies](install-dependencies.md) |
 | Start a new project | [Setup Prompt](setup-prompt.md) |
 | Build a feature | [Build Prompt](build-prompt.md) |
