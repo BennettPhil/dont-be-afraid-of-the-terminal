@@ -1,0 +1,5 @@
+remote_theme: pages-themes/minimal@v0.2.0
+title: "Don't Be Afraid Of The Terminal"
+description: "Workshop companion site — get comfortable with the terminal and coding agents"
+plugins:
+  - jekyll-remote-theme

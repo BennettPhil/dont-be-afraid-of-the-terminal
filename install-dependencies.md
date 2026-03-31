@@ -1,11 +1,14 @@
+[&larr; Back to Workshop Home](README.md)
 
-On this page, you will find the instructions for setting up the dependencies for the "Don't Be Afraid Of The Terminal" workshop. 
+# Install Dependencies and Start an Agent
+
+On this page, you will find the instructions for setting up the dependencies for the "Don't Be Afraid Of The Terminal" workshop.
 
 ## Windows
 
-To use Windows, we need to install something called "Windows Subsystem for Linux" (WSL). You don't need to know much about what that is, but it's basically another operating system running inside your Windows machine that we will run the future CLI software on. 
+To use Windows, we need to install something called "Windows Subsystem for Linux" (WSL). You don't need to know much about what that is, but it's basically another operating system running inside your Windows machine that we will run the future CLI software on.
 
-Fistly open the "Command Prompt", or CMD, you can search for it in the main search bar. 
+Fistly open the "Command Prompt", or CMD, you can search for it in the main search bar.
 ### 1. Setup WSL (Windows Only)
 
 Firstly we need to install the wsl software, and also download the version of Linux we need, the version we will be using is called Ubuntu.
@@ -18,7 +21,7 @@ We will next install Homebrew, a software package manager that will help us easi
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-**Important**: *When this is finished, there will be some commands it asks you to copy and page, keep an eye out for them at the end of the install process.* 
+**Important**: *When this is finished, there will be some commands it asks you to copy and page, keep an eye out for them at the end of the install process.*
 ### 3. Install Node.js (Codex Only)
 
 Via Brew, we will install Node.JS a programming language that Codex is written in (kind of, happy to elaborate if you need more clarity).
@@ -28,7 +31,7 @@ Via Brew, we will install Node.JS a programming language that Codex is written i
 ---
 # Install & Start Agent
 
-Running the agents is the same 
+Running the agents is the same
 ## Claude Code
 	> brew install claude-code
 	> claude
@@ -36,3 +39,7 @@ Running the agents is the same
 ## Codex
 	> npm install @openai/codex
 	> codex
+
+---
+
+**Next step:** [Setup Prompt &rarr;](setup-prompt.md)

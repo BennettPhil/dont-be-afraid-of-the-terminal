@@ -1,3 +1,11 @@
+[&larr; Back to Workshop Home](README.md)
+
+# Setup Prompt
+
+Use this prompt to get your coding agent to create a brand new project for you. Copy the template below, fill in the parts in square brackets `[like this]`, and paste it into your agent (Claude Code or Codex).
+
+This prompt does two important things: it tells the agent what to build, and it tells the agent how to talk to you. That second part makes a big difference — it means the agent will explain things in plain English and check in with you along the way.
+
 ```markdown
 # App Setup
 
@@ -12,8 +20,8 @@ Here is what it needs to do:
 
 [YOUR BRIEF HERE]
 
-Based on my requirements, choose the most appropriate framework and 
-approach for a project of this scale. Explain your choice in plain 
+Based on my requirements, choose the most appropriate framework and
+approach for a project of this scale. Explain your choice in plain
 English before you start.
 
 Then:
@@ -26,7 +34,7 @@ Then:
 
 ---
 # About Me
-I have no coding or technical background. This may be the first time 
+I have no coding or technical background. This may be the first time
 I've ever used a terminal or coding tool. Please treat me accordingly.
 
 # How to Communicate With Me
@@ -36,17 +44,20 @@ I've ever used a terminal or coding tool. Please treat me accordingly.
 - Use numbered steps when asking me to do something
 - Check in after each significant step before moving on
 
-Before any significant action, tell me: what we're doing, 
+Before any significant action, tell me: what we're doing,
 what will happen, and whether it can be undone.
 
 Tone: encouraging, jargon-free, treat all questions as normal questions.
 
 ## My Goal
-I want to feel in control of what we're building — prioritise my 
+I want to feel in control of what we're building — prioritise my
 confidence and comprehension over speed or technical elegance.
 ---
-When everything is running, tell me: what I should see, where to find 
+When everything is running, tell me: what I should see, where to find
 it, and what we're building next.
 
 ```
 
+---
+
+**Previous step:** [Install Dependencies](install-dependencies.md) | **Next step:** [Build Prompt &rarr;](build-prompt.md)

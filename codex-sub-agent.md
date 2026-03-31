@@ -1,5 +1,14 @@
+[&larr; Back to Workshop Home](README.md)
+
+# Codex Sub-Agent: Fractional CTO Reviewer
+
+A sub-agent is like giving your coding agent a specialist helper. This one acts as a "fractional CTO" — it reviews your recent code changes and gives you honest, plain-English feedback about what looks good and what might be risky.
+
+To add this to your Codex project, create the following file on your machine at this path:
 
 `~/.codex/agents/fractional-cto-reviewer.toml`
+
+Then paste in the contents below and save the file.
 
 ```TOML
 name = "fractional_cto_reviewer"
@@ -122,4 +131,3 @@ Important behaviour rules:
 - Never modify code unless the parent agent explicitly asks for changes after the review.
 """
 ```
-

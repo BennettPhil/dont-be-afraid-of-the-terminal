@@ -1,3 +1,11 @@
+[&larr; Back to Workshop Home](README.md)
+
+# Build Prompt
+
+Once your project is set up, use this template every time you want to add a new feature or make changes. The structure helps the agent understand exactly what you want so it can do better work.
+
+Copy the template, fill in the parts in square brackets `[like this]`, and paste it into your agent.
+
 ## Template
 
 
@@ -23,19 +31,24 @@
 [Any edge cases, preferences, or things to watch out for]
 ```
 
+---
 
-## Pomodoro Timer
+## Example Projects
+
+Not sure what to build? Try one of these ready-made prompts. Just copy and paste the whole block into your agent.
+
+### Pomodoro Timer
 
 ```markdown
 ## Mode: Build
 
 ## Goal
-I want to create a Pomodoro timer to help me focus on my tasks and avoid distractions when working on important work. 
+I want to create a Pomodoro timer to help me focus on my tasks and avoid distractions when working on important work.
 
 ## Context
 - The timer should work in both Windows and MacOs
 - It should sit in the top menu bar in macOS and in the systems tray in Windows
-- The app should block access to a configurable set of apps and websites. 
+- The app should block access to a configurable set of apps and websites.
 
 ## Acceptance Criteria
 - [ ] I can start timers for focus time and break time
@@ -43,9 +56,9 @@ I want to create a Pomodoro timer to help me focus on my tasks and avoid distrac
 - [ ] The set of websites and apps is configurable in some kind of configuration area
 
 ## Notes
-Please make sure the application is thoroughly tested before delivery, and build a test plan based on the technology already in this directory. 
+Please make sure the application is thoroughly tested before delivery, and build a test plan based on the technology already in this directory.
 ```
-## Task Manager
+### Task Manager
 
 
 ```markdown
@@ -68,7 +81,7 @@ Build a simple task manager app that lets me manage a to-do list.
 ## Notes
 - Keep it simple and clean looking
 ```
-## Chrome Extension
+### Chrome Extension
 
 ```markdown
 ## Mode: Build
@@ -90,3 +103,7 @@ Build a Chrome extension that spots LinkedIn posts that look like they were writ
 - No API calls — just pattern matching on common AI phrases like "In today's fast-paced world" or "Let that sink in"
 - Should catch new posts as they load while scrolling
 ```
+
+---
+
+**Previous step:** [Setup Prompt](setup-prompt.md) | **Next step:** [Debug Prompt &rarr;](debug-prompt.md)
