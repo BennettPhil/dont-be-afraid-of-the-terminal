@@ -2,37 +2,33 @@
 
 # Debug Prompt
 
-Something will break — no software is perfect. When it does, use this template to describe the problem clearly. The better you describe the gap between what you expected and what actually happened, the faster the agent can fix it.
+Use the version that matches the coding agent you are using. Both versions ask for the same debugging context, but each one keeps the agent inside the correct tool conventions.
 
-Copy the template, fill in the parts in square brackets `[like this]`, and paste it into your agent.
+If you launched the agent with `claude`, use the Claude Code version. If you launched it with `codex`, use the Codex version.
 
-```markdown
-## Mode: Debug
+Copy one prompt only:
 
-## Expected Behaviour
-A few short sentences about what you expected the software to do.
-Include what you were doing when the problem happened.
+## Claude Code
 
-## Current Behaviour
-A few short sentences about what is happening instead.
+Use this if you are working in Claude Code. It tells Claude to read `CLAUDE.md` and stay inside Claude Code conventions.
 
-## Context
-- Relevant files/paths: [list them or say "see src/auth/"]
-- Any error messages that you see when the problem occurs
-- Any log files that exist and can be checked
-- Related issue/ticket: [link or description]
+[Open the Claude Code Debug Prompt](debug-prompt-claude.md)
 
-## What I've Already Tried
-A list of everything you've tried
+## Codex
 
-## Acceptance Criteria
-- [ ] [Specific, testable outcome]
-- [ ] [Another outcome]
+Use this if you are working in Codex. It tells Codex to read `AGENTS.md` and avoid Claude-specific commands.
 
-## Notes
-[Any edge cases, preferences, or things to watch out for]
-```
+[Open the Codex Debug Prompt](debug-prompt-codex.md)
 
 ---
 
-**Previous step:** [Build Prompt](build-prompt.md) | **Next step (optional):** [Sub-Agents &rarr;](claude-sub-agent.md)
+## Optional Next Step
+
+Want to add a reviewer after the bug is fixed? Pick the guide for your agent:
+
+- [Claude Code Sub-Agent](claude-sub-agent.md)
+- [Codex Sub-Agent](codex-sub-agent.md)
+
+---
+
+**Previous step:** [Build Prompt](build-prompt.md) | **Next step:** [Workshop Home &rarr;](README.md)

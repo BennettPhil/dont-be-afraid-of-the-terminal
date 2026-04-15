@@ -13,14 +13,23 @@ Follow these pages in order during the workshop:
 ### 1. [Install Dependencies](install-dependencies.md)
 Get your machine ready. This covers installing the terminal tools and software you'll need, whether you're on Windows or macOS.
 
-### 2. [Setup Prompt](setup-prompt.md)
-Use this prompt template to get your coding agent to scaffold a brand new project for you. This is where you tell the agent what you want to build and how you'd like it to communicate with you.
+### 2. Setup Prompt
+Choose the version that matches your agent:
 
-### 3. [Build Prompt](build-prompt.md)
-Once your project is set up, use these structured prompt templates to tell the agent what features to build. Includes ready-to-use example projects you can try.
+- [Claude Code Setup Prompt](setup-prompt-claude.md)
+- [Codex Setup Prompt](setup-prompt-codex.md)
 
-### 4. [Debug Prompt](debug-prompt.md)
-Something broken? This prompt template helps you describe the problem clearly so the agent can investigate and fix it for you.
+### 3. Build Prompt
+Choose the version that matches your agent:
+
+- [Claude Code Build Prompt](build-prompt-claude.md)
+- [Codex Build Prompt](build-prompt-codex.md)
+
+### 4. Debug Prompt
+Choose the version that matches your agent:
+
+- [Claude Code Debug Prompt](debug-prompt-claude.md)
+- [Codex Debug Prompt](debug-prompt-codex.md)
 
 ---
 
@@ -56,8 +65,11 @@ New to the terminal? This one-page reference covers every command you'll need du
 |---|---|
 | Look up a terminal command | [Terminal Cheat Sheet](terminal-cheat-sheet.md) |
 | Set up your machine | [Install Dependencies](install-dependencies.md) |
-| Start a new project | [Setup Prompt](setup-prompt.md) |
-| Build a feature | [Build Prompt](build-prompt.md) |
-| Fix something broken | [Debug Prompt](debug-prompt.md) |
+| Start a new project in Claude Code | [Claude Code Setup Prompt](setup-prompt-claude.md) |
+| Start a new project in Codex | [Codex Setup Prompt](setup-prompt-codex.md) |
+| Build a feature in Claude Code | [Claude Code Build Prompt](build-prompt-claude.md) |
+| Build a feature in Codex | [Codex Build Prompt](build-prompt-codex.md) |
+| Fix something broken in Claude Code | [Claude Code Debug Prompt](debug-prompt-claude.md) |
+| Fix something broken in Codex | [Codex Debug Prompt](debug-prompt-codex.md) |
 | Add a code reviewer (Claude) | [Claude Sub-Agent](claude-sub-agent.md) |
 | Add a code reviewer (Codex) | [Codex Sub-Agent](codex-sub-agent.md) |
