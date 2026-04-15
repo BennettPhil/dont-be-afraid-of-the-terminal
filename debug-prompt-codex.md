@@ -8,7 +8,7 @@ Use this template when something is broken and you want Codex to investigate it.
 Before you start:
 - Read `AGENTS.md` if it exists and follow it
 - Stay within Codex conventions
-- Do not run `claude`, do not run `/init`, and do not create `CLAUDE.md`
+- Use `AGENTS.md` as the project instructions file for this task
 - Explain the likely root cause in plain English before making major changes
 
 ## Mode

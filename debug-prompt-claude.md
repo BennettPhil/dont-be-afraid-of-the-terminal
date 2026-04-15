@@ -8,7 +8,7 @@ Use this template when something is broken and you want Claude Code to investiga
 Before you start:
 - Read `CLAUDE.md` if it exists and follow it
 - Stay within Claude Code conventions
-- Do not create `AGENTS.md` or use Codex-specific commands
+- Use `CLAUDE.md` as the project instructions file for this task
 - Explain the likely root cause in plain English before making major changes
 
 ## Mode

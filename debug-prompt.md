@@ -2,7 +2,7 @@
 
 # Debug Prompt
 
-Use the version that matches the coding agent you are using. Both versions ask for the same debugging context, but each one keeps the agent inside the correct tool conventions.
+Use the version that matches the coding agent you are using. Both versions ask for the same debugging context and point the agent at the right project instructions file.
 
 If you launched the agent with `claude`, use the Claude Code version. If you launched it with `codex`, use the Codex version.
 
@@ -16,7 +16,7 @@ Use this if you are working in Claude Code. It tells Claude to read `CLAUDE.md` 
 
 ## Codex
 
-Use this if you are working in Codex. It tells Codex to read `AGENTS.md` and avoid Claude-specific commands.
+Use this if you are working in Codex. It tells Codex to read `AGENTS.md` before it starts.
 
 [Open the Codex Debug Prompt](debug-prompt-codex.md)
 

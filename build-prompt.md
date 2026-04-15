@@ -2,7 +2,7 @@
 
 # Build Prompt
 
-Use the version that matches the coding agent you are using. The structure is the same in both versions, but each one points the agent at the right project instructions file and avoids cross-tool commands.
+Use the version that matches the coding agent you are using. The structure is the same in both versions, and each one points the agent at the right project instructions file.
 
 If you launched the agent with `claude`, use the Claude Code version. If you launched it with `codex`, use the Codex version.
 

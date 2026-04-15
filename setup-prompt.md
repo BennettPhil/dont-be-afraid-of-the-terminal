@@ -16,7 +16,7 @@ Use this if you are working in Claude Code. It tells Claude to run `/init` and u
 
 ## Codex
 
-Use this if you are working in Codex. It tells Codex to create or update `AGENTS.md` directly and avoids Claude-specific slash commands.
+Use this if you are working in Codex. It tells Codex to create or update `AGENTS.md` directly for the project.
 
 [Open the Codex Setup Prompt](setup-prompt-codex.md)
 

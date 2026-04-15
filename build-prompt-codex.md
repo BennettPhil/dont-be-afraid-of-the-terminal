@@ -10,7 +10,7 @@ Use this template every time you want Codex to add a feature or make a change. C
 Before you start:
 - Read `AGENTS.md` if it exists and follow it
 - Stay within Codex conventions
-- Do not run `claude`, do not run `/init`, and do not create `CLAUDE.md`
+- Use `AGENTS.md` as the project instructions file for this task
 
 ## Mode
 [Build | Debug | Review | Explore]
@@ -46,7 +46,7 @@ Not sure what to build? Try one of these ready-made prompts. Copy and paste the 
 Before you start:
 - Read `AGENTS.md` if it exists and follow it
 - Stay within Codex conventions
-- Do not run `claude`, do not run `/init`, and do not create `CLAUDE.md`
+- Use `AGENTS.md` as the project instructions file for this task
 
 ## Mode
 Build
@@ -74,7 +74,7 @@ Please make sure the application is thoroughly tested before delivery, and build
 Before you start:
 - Read `AGENTS.md` if it exists and follow it
 - Stay within Codex conventions
-- Do not run `claude`, do not run `/init`, and do not create `CLAUDE.md`
+- Use `AGENTS.md` as the project instructions file for this task
 
 ## Mode
 Build
@@ -103,7 +103,7 @@ Build a simple task manager app that lets me manage a to-do list.
 Before you start:
 - Read `AGENTS.md` if it exists and follow it
 - Stay within Codex conventions
-- Do not run `claude`, do not run `/init`, and do not create `CLAUDE.md`
+- Use `AGENTS.md` as the project instructions file for this task
 
 ## Mode
 Build

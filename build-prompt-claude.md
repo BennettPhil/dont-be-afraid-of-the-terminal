@@ -10,7 +10,7 @@ Use this template every time you want Claude Code to add a feature or make a cha
 Before you start:
 - Read `CLAUDE.md` if it exists and follow it
 - Stay within Claude Code conventions
-- Do not create `AGENTS.md` or use Codex-specific commands
+- Use `CLAUDE.md` as the project instructions file for this task
 
 ## Mode
 [Build | Debug | Review | Explore]
@@ -46,7 +46,7 @@ Not sure what to build? Try one of these ready-made prompts. Copy and paste the 
 Before you start:
 - Read `CLAUDE.md` if it exists and follow it
 - Stay within Claude Code conventions
-- Do not create `AGENTS.md` or use Codex-specific commands
+- Use `CLAUDE.md` as the project instructions file for this task
 
 ## Mode
 Build
@@ -74,7 +74,7 @@ Please make sure the application is thoroughly tested before delivery, and build
 Before you start:
 - Read `CLAUDE.md` if it exists and follow it
 - Stay within Claude Code conventions
-- Do not create `AGENTS.md` or use Codex-specific commands
+- Use `CLAUDE.md` as the project instructions file for this task
 
 ## Mode
 Build
@@ -103,7 +103,7 @@ Build a simple task manager app that lets me manage a to-do list.
 Before you start:
 - Read `CLAUDE.md` if it exists and follow it
 - Stay within Claude Code conventions
-- Do not create `AGENTS.md` or use Codex-specific commands
+- Use `CLAUDE.md` as the project instructions file for this task
 
 ## Mode
 Build

@@ -27,8 +27,8 @@ Then:
 2. Install all dependencies
 3. Get it running so I can see the app window open on my machine
 4. Run `/init` to generate or update `CLAUDE.md`
-5. Do not create `AGENTS.md` or use Codex-specific commands
-6. Do not actually build the feature/project yet, we will do that in a later step
+5. Use `CLAUDE.md` as the project instructions file for this project
+6. Stop after the setup is complete so we can build the feature/project in a later step
 7. Add the following block to the TOP of `CLAUDE.md` without removing any existing project-specific instructions
 
 ---
