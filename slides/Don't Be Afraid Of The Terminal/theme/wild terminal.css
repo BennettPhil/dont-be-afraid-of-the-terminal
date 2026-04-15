@@ -4,6 +4,13 @@
 /* CODE BLOCK VARIABLES (CRT terminal aesthetic)                                                 */
 
 :root {
+  --text-vertical-align-layout-cover: center;
+  --text-vertical-align-layout-title: center;
+  --text-vertical-align-layout-section: center;
+  --text-vertical-align-layout-default: center;
+  --text-vertical-align-layout-split: center;
+  --text-vertical-align-layout-3-column: center;
+
   --code-background: #1E120A;
   --code-border: rgba(51, 255, 51, 0.15);
   --code-text: #33FF33;
@@ -335,6 +342,47 @@ section a {
 .invert section a {
   color: #C4841D;
   text-decoration-color: #8B4513;
+}
+
+/*************************************************************************************************/
+/* TWO-COLUMN / SPLIT LAYOUT VERTICAL CENTERING                                                  */
+
+.v-split-container > div,
+.grid-container > div {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+section.layout-split > div,
+section[class*="split"] > div {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/*************************************************************************************************/
+/* HEADER & FOOTER                                                                               */
+
+.header,
+.footer {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+.footer {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.footer,
+.footer *,
+.footer span,
+.footer p,
+.footer div {
+  font-size: 1.12em !important;
+  -webkit-text-size-adjust: none !important;
 }
 
 /*************************************************************************************************/
