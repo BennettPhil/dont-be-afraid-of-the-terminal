@@ -28,8 +28,10 @@ Then:
 3. Get it running so I can see the app window open on my machine
 4. Run `/init` to generate or update `CLAUDE.md`
 5. Use `CLAUDE.md` as the project instructions file for this project
-6. Stop after the setup is complete so we can build the feature/project in a later step
-7. Add the following block to the TOP of `CLAUDE.md` without removing any existing project-specific instructions
+6. Add the following block to the TOP of `CLAUDE.md` so it is definitely present in the final file, while keeping any useful existing project-specific instructions
+7. If `CLAUDE.md` already exists, merge this block into it instead of skipping it
+8. After updating `CLAUDE.md`, show me the section you added so I can confirm the communication style is in place
+9. Stop after the setup is complete so we can build the feature/project in a later step
 
 ---
 # About Me

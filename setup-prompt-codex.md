@@ -28,8 +28,10 @@ Then:
 3. Get it running so I can see the app window open on my machine
 4. Create or update an `AGENTS.md` file in the project root
 5. Use `AGENTS.md` as the project instructions file for this project
-6. Stop after the setup is complete so we can build the feature/project in a later step
-7. Add the following block to the TOP of `AGENTS.md` without removing any existing project-specific instructions
+6. Add the following block to the TOP of `AGENTS.md` so it is definitely present in the final file, while keeping any useful existing project-specific instructions
+7. If `AGENTS.md` already exists, merge this block into it instead of skipping it
+8. After updating `AGENTS.md`, show me the section you added so I can confirm the communication style is in place
+9. Stop after the setup is complete so we can build the feature/project in a later step
 
 ---
 # About Me

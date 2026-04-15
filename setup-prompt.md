@@ -10,13 +10,13 @@ Copy one prompt only:
 
 ## Claude Code
 
-Use this if you are working in Claude Code. It tells Claude to run `/init` and update `CLAUDE.md`.
+Use this if you are working in Claude Code. It tells Claude to run `/init` and make sure your communication style is written into `CLAUDE.md`.
 
 [Open the Claude Code Setup Prompt](setup-prompt-claude.md)
 
 ## Codex
 
-Use this if you are working in Codex. It tells Codex to create or update `AGENTS.md` directly for the project.
+Use this if you are working in Codex. It tells Codex to create or update `AGENTS.md` and make sure your communication style is written into it.
 
 [Open the Codex Setup Prompt](setup-prompt-codex.md)
 
