@@ -68,6 +68,9 @@ The shortcuts you can type inside Claude Code and Codex — `/init`, `/model`, `
 ### [An Idiot's Guide to Git and GitHub](git-github-guide.md)
 A gentle, no-jargon walkthrough for non-technical people. Get a GitHub account, install the tools, push your first project, and learn the prompts to hand to your agent whenever you need to save, undo, or recover work.
 
+### [Things to Know Before You Trust the Agent](things-to-know.md)
+Twelve honest things worth knowing about how coding agents actually behave — where they're strong, where they'll quietly mislead you, and how to work with them without getting burned.
+
 ---
 
 ## Quick Reference
@@ -77,6 +80,7 @@ A gentle, no-jargon walkthrough for non-technical people. Get a GitHub account, 
 | Look up a terminal command | [Terminal Cheat Sheet](terminal-cheat-sheet.md) |
 | Look up a slash command | [Slash Commands Cheat Sheet](slash-commands-cheat-sheet.md) |
 | Get set up with Git and GitHub | [Git and GitHub Guide](git-github-guide.md) |
+| Understand how agents actually behave | [Things to Know Before You Trust the Agent](things-to-know.md) |
 | Set up your machine | [Install Dependencies](install-dependencies.md) |
 | Start a new project in Claude Code | [Claude Code Setup Prompt](setup-prompt-claude.md) |
 | Start a new project in Codex | [Codex Setup Prompt](setup-prompt-codex.md) |
