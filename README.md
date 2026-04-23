@@ -53,9 +53,18 @@ Want to revisit the presentation from the workshop? You can view the full slide 
 
 ---
 
-## [Terminal Cheat Sheet](terminal-cheat-sheet.md)
+## Reference Guides
 
-New to the terminal? This one-page reference covers every command you'll need during the workshop — navigating folders, managing files, keyboard shortcuts, and agent commands. Works for both macOS and Windows (WSL).
+Handy one-pagers you can keep open alongside your agent:
+
+### [Terminal Cheat Sheet](terminal-cheat-sheet.md)
+New to the terminal? Covers every command you'll need during the workshop — navigating folders, managing files, keyboard shortcuts, and agent commands. Works for both macOS and Windows (WSL).
+
+### [Slash Commands Cheat Sheet](slash-commands-cheat-sheet.md)
+The shortcuts you can type inside Claude Code and Codex — `/init`, `/model`, `/clear`, `/help` and the rest. One-page reference for both agents side by side.
+
+### [An Idiot's Guide to Git and GitHub](git-github-guide.md)
+A gentle, no-jargon walkthrough for non-technical people. Get a GitHub account, install the tools, push your first project, and learn the prompts to hand to your agent whenever you need to save, undo, or recover work.
 
 ---
 
@@ -64,6 +73,8 @@ New to the terminal? This one-page reference covers every command you'll need du
 | What you need to do | Where to find it |
 |---|---|
 | Look up a terminal command | [Terminal Cheat Sheet](terminal-cheat-sheet.md) |
+| Look up a slash command | [Slash Commands Cheat Sheet](slash-commands-cheat-sheet.md) |
+| Get set up with Git and GitHub | [Git and GitHub Guide](git-github-guide.md) |
 | Set up your machine | [Install Dependencies](install-dependencies.md) |
 | Start a new project in Claude Code | [Claude Code Setup Prompt](setup-prompt-claude.md) |
 | Start a new project in Codex | [Codex Setup Prompt](setup-prompt-codex.md) |
