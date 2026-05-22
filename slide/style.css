@@ -1,0 +1,569 @@
+/* ============================================================
+   "Don't Be Afraid Of The Terminal" — Slidev theme
+   Refined minimal · clean break from the editorial original.
+   Light calm canvas; the real terminal is the only dark surface.
+   ============================================================ */
+
+:root {
+  --canvas:     oklch(98.5% 0.004 250);
+  --canvas-2:   oklch(96.5% 0.005 250);
+  --ink:        oklch(22% 0.02 260);
+  --ink-soft:   oklch(46% 0.02 260);
+  --ink-faint:  oklch(62% 0.02 260);
+  --hairline:   oklch(22% 0.02 260 / 0.14);
+  --hairline-2: oklch(22% 0.02 260 / 0.28);
+  --accent:     oklch(76% 0.15 78);
+  --accent-ink: oklch(34% 0.09 70);
+  --term-bg:    oklch(20% 0.015 260);
+  --term-bg-2:  oklch(26% 0.015 260);
+  --term-fg:    oklch(94% 0.01 250);
+  --term-accent: oklch(82% 0.15 80);
+
+  --slidev-code-font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}
+
+/* ---------- Canvas ---------- */
+.slidev-layout {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  padding: 3.4rem 4rem;
+  font-feature-settings: "cv02","cv03","cv04","cv11";
+}
+.slidev-layout.text-center { padding: 3rem 4rem; }
+
+/* ---------- Display type ---------- */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin: 0 0 0.5em;
+}
+.slidev-layout h1 {
+  font-size: 3.1rem;
+  line-height: 1.02;
+  font-weight: 700;
+}
+.slidev-layout h2 {
+  font-size: 1.9rem;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.slidev-layout h3 {
+  font-size: 1.35rem;
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Kicker (h4 / h6: the source "eyebrows") ---------- */
+.slidev-layout h4,
+.slidev-layout h6 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.slidev-layout h4::before,
+.slidev-layout h6::before {
+  content: "";
+  width: 0.55em;
+  height: 0.55em;
+  background: var(--accent);
+  display: inline-block;
+  flex: none;
+}
+.slidev-layout.text-center h4,
+.slidev-layout.text-center h6 { justify-content: center; }
+
+/* ---------- Body ---------- */
+.slidev-layout p {
+  font-size: 1.15rem;
+  line-height: 1.55;
+  max-width: 62ch;
+  margin: 0 0 0.7em;
+}
+.slidev-layout.text-center p { margin-left: auto; margin-right: auto; }
+.slidev-layout strong { font-weight: 650; color: var(--ink); }
+.slidev-layout em {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--accent-ink);
+}
+
+/* ---------- Lists: dash markers, no bullets ---------- */
+.slidev-layout ul { list-style: none; padding: 0; margin: 0.6em 0; }
+.slidev-layout ul li {
+  position: relative;
+  padding-left: 1.5em;
+  font-size: 1.12rem;
+  line-height: 1.5;
+  margin: 0.42em 0;
+  max-width: 60ch;
+}
+.slidev-layout ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent-ink);
+  font-weight: 600;
+}
+.slidev-layout ol { padding-left: 1.3em; margin: 0.6em 0; }
+.slidev-layout ol li {
+  font-size: 1.12rem;
+  line-height: 1.5;
+  margin: 0.42em 0;
+  padding-left: 0.3em;
+}
+.slidev-layout ol li::marker {
+  color: var(--accent-ink);
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ---------- Rules ---------- */
+.slidev-layout hr {
+  border: 0;
+  border-top: 1px solid var(--hairline-2);
+  margin: 1rem 0;
+}
+
+/* ---------- The copyable affordance: inline command pill ---------- */
+.slidev-layout :not(pre) > code {
+  background: var(--term-bg);
+  color: var(--term-accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.86em;
+  font-weight: 500;
+  padding: 0.16em 0.5em;
+  border-radius: 5px;
+  white-space: nowrap;
+  letter-spacing: 0;
+}
+
+/* ---------- The terminal: the only dark surface ---------- */
+.slidev-layout pre,
+.slidev-layout .slidev-code {
+  background: var(--term-bg) !important;
+  color: var(--term-fg) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  border-radius: 10px;
+  padding: 2.1rem 1.4rem 1.3rem !important;
+  position: relative;
+  overflow: auto;
+  box-shadow: 0 1px 0 var(--hairline-2);
+  -webkit-font-smoothing: antialiased;
+}
+/* honest window chrome — three dots, not glass */
+.slidev-layout pre::before,
+.slidev-layout .slidev-code::before {
+  content: "";
+  position: absolute;
+  top: 0.85rem;
+  left: 1.4rem;
+  width: 0.66rem;
+  height: 0.66rem;
+  border-radius: 50%;
+  background: oklch(64% 0.17 28);
+  box-shadow:
+    1.05rem 0 0 oklch(80% 0.15 85),
+    2.1rem 0 0 oklch(72% 0.16 145);
+}
+.slidev-layout pre code { background: transparent !important; }
+
+/* ---------- Quote ---------- */
+.slidev-layout blockquote {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.28;
+  font-weight: 500;
+  color: var(--ink);
+  max-width: 18ch;
+  text-wrap: balance;
+}
+.slidev-layout blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: -0.62em;
+  top: -0.18em;
+  font-size: 2.1em;
+  line-height: 1;
+  color: var(--accent);
+  font-family: 'Space Grotesk', serif;
+}
+.slidev-layout blockquote p {
+  font-size: inherit;
+  line-height: inherit;
+  max-width: none;
+  margin: 0;
+  color: inherit;
+}
+
+/* ---------- Tables: editorial rules, no zebra, no card ---------- */
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  color: var(--ink);
+  margin: 0.5rem 0;
+}
+.slidev-layout thead tr { border-bottom: 2px solid var(--ink); }
+.slidev-layout th {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  vertical-align: bottom;
+}
+.slidev-layout td {
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+  line-height: 1.4;
+}
+.slidev-layout tbody tr:last-child td { border-bottom: 0; }
+.slidev-layout td:first-child { font-weight: 600; }
+.slidev-layout table strong { color: var(--ink); }
+
+/* ---------- Cover slides: big word + one accent rule ---------- */
+.slidev-layout.text-center h1 {
+  font-size: clamp(2.6rem, 7.4vw, 4.4rem);
+  line-height: 1.04;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  max-width: 16ch;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-wrap: anywhere;
+}
+.slidev-layout.text-center h1::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 4px;
+  background: var(--accent);
+  margin: 1.4rem auto 0;
+  border-radius: 2px;
+}
+.slidev-layout.text-center h2 { font-size: 2.4rem; }
+.slidev-layout.text-center h3 { font-size: 1.5rem; margin-top: 0.8rem; }
+
+/* ---------- Layout helpers ---------- */
+.slidev-layout .grid { gap: 2.2rem; }
+.slidev-layout [class*="col-cards"] { gap: 2.2rem; }
+.slidev-layout img { border-radius: 8px; }
+.slidev-layout .slidev-layout__content { height: 100%; }
+
+/* ---------- Progress meter (workshop step tracker) ---------- */
+.wsprog {
+  position: absolute;
+  left: 4rem;
+  right: 4rem;
+  bottom: 1.5rem;
+  z-index: 5;
+  pointer-events: none;
+}
+.wsprog__label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 0.6em;
+  align-items: baseline;
+}
+.wsprog__label b { color: var(--accent-ink); font-weight: 650; }
+.wsprog__label .now { color: var(--ink); font-weight: 500; text-transform: none; letter-spacing: 0; }
+.wsprog__bar { display: flex; gap: 5px; }
+.wsprog__seg {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--hairline);
+}
+.wsprog__seg.done { background: var(--ink-faint); }
+.wsprog__seg.active { background: var(--accent); }
+.slidev-layout:has(.wsprog) { padding-bottom: 5.2rem; }
+
+/* ---------- Slidev chrome ---------- */
+.slidev-page-number { color: var(--ink-faint); }
+
+#slide-container > .absolute.bottom-0.left-0 {
+  display: none !important;
+}
+
+#slidev-goto-dialog {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+/* ---------- Selection ---------- */
+::selection { background: var(--accent); color: var(--term-bg); }
+
+/* ---------- Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .slidev-page, * { transition: none !important; animation: none !important; }
+}
+
+/* ---------- Dense table slides (AI Coding Surfaces, Distribution) ---------- */
+.slidev-layout.dense { padding: 2.2rem 3.4rem 2rem; }
+.slidev-layout.dense h4,
+.slidev-layout.dense h6 { margin-bottom: 0.5rem; }
+.slidev-layout.dense h1 { font-size: 2.2rem; margin-bottom: 0.7rem; }
+.slidev-layout.dense table { font-size: 0.66rem; margin: 0; }
+.slidev-layout.dense th {
+  font-size: 0.58rem;
+  padding: 0.3rem 0.6rem;
+  letter-spacing: 0.08em;
+}
+.slidev-layout.dense td {
+  padding: 0.34rem 0.6rem;
+  line-height: 1.32;
+}
+.slidev-layout.dense p {
+  font-size: 0.74rem;
+  line-height: 1.4;
+  margin: 0.6rem 0 0;
+  max-width: none;
+}
+.slidev-layout.dense .text-xs,
+.slidev-layout.dense .text-sm { font-size: inherit; }
+
+/* ---------- Annotated prompt slides (Setup / Build / Debug) ---------- */
+.slidev-layout.prompt { padding: 2rem 3rem 1.7rem; }
+.slidev-layout.prompt h1 { font-size: 2rem; margin-bottom: 0.7rem; }
+.slidev-layout.prompt .grid {
+  grid-template-columns: 1.62fr 1fr !important;
+  gap: 1.5rem !important;
+  align-items: start;
+}
+.slidev-layout.prompt pre {
+  font-size: 0.5rem !important;
+  line-height: 1.34 !important;
+  padding: 1.35rem 1rem 0.9rem !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  border-radius: 7px;
+}
+.slidev-layout.prompt pre::before {
+  top: 0.55rem; left: 1rem;
+  width: 0.42rem; height: 0.42rem;
+  box-shadow: 0.66rem 0 0 oklch(80% 0.15 85), 1.32rem 0 0 oklch(72% 0.16 145);
+}
+.slidev-layout.prompt pre code { font-size: inherit !important; }
+.slidev-layout.prompt .text-sm { font-size: 0.78rem; }
+.slidev-layout.prompt .text-sm p,
+.slidev-layout.prompt .text-sm strong { font-size: inherit; line-height: 1.34; }
+.slidev-layout.prompt .text-sm p { margin: 0 0 0.5rem; max-width: none; }
+.slidev-layout.prompt .text-sm code { font-size: 0.82em; }
+
+/* ---------- Prompt slides: reclaim vertical space, per-slide fit ---------- */
+.slidev-layout.prompt { padding: 1.3rem 2.6rem 1.1rem; }
+.slidev-layout.prompt h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 0.55rem;
+}
+.slidev-layout.prompt .grid {
+  grid-template-columns: 1.72fr 1fr !important;
+  gap: 1.3rem !important;
+}
+.slidev-layout.prompt pre {
+  line-height: 1.3 !important;
+  padding: 1.05rem 0.85rem 0.75rem !important;
+}
+.slidev-layout.prompt:has(.wsprog) { padding-bottom: 2.4rem; }
+.slidev-layout.prompt .wsprog { bottom: 0.7rem; }
+.slidev-layout.prompt .wsprog__label { font-size: 0.6rem; margin-bottom: 0.3rem; }
+.slidev-layout.prompt .wsprog__bar { display: none; }
+
+.slidev-layout.prompt-xl pre { font-size: 0.20rem !important; }
+.slidev-layout.prompt-lg pre { font-size: 0.295rem !important; }
+.slidev-layout.prompt-md pre { font-size: 0.42rem !important; }
+
+/* ============================================================
+   Layout fixes (review pass 2)
+   ============================================================ */
+
+/* --- Code & commands must always be fully visible (29) --- */
+.slidev-layout pre,
+.slidev-layout pre code,
+.slidev-layout .slidev-code,
+.slidev-layout .slidev-code code {
+  white-space: pre-wrap !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+/* Prompt panels keep their tuned wrapping but no scroll */
+.slidev-layout.prompt pre { overflow: hidden !important; }
+
+/* --- Inline command pills wrap instead of overlapping (30) --- */
+.slidev-layout :not(pre) > code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* --- Step slides: compact so nothing hides under the meter (32,35,39,42) --- */
+.slidev-layout:has(.wsprog) { padding-bottom: 5rem; }
+.slidev-layout:has(.wsprog) h1 { font-size: 2.3rem; margin-bottom: 0.45rem; }
+.slidev-layout:has(.wsprog) h2 { font-size: 1.5rem; margin-bottom: 0.4rem; }
+.slidev-layout:has(.wsprog) h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+.slidev-layout:has(.wsprog) p  { font-size: 1rem; margin: 0 0 0.5em; }
+.slidev-layout:has(.wsprog) li { font-size: 1rem; margin: 0.3em 0; }
+.slidev-layout:has(.wsprog) pre {
+  font-size: 0.78rem;
+  padding: 1.5rem 1.1rem 0.95rem !important;
+}
+.slidev-layout:has(.wsprog) img { max-height: 21rem !important; width: auto; object-fit: contain; }
+.slidev-layout:has(.wsprog) .border-2 {
+  padding: 1.3rem 1.7rem !important;
+  margin-top: 1rem !important;
+  gap: 2rem !important;
+}
+.slidev-layout:has(.wsprog) .w-52 { width: 8rem !important; }
+/* Meter gets a canvas fade so nothing reads as colliding */
+.wsprog {
+  background: linear-gradient(to bottom, transparent, var(--canvas) 38%);
+  padding-top: 0.7rem;
+}
+
+/* --- Quote slides readable + image not squished (19, 53) --- */
+.slidev-layout blockquote {
+  max-width: none;
+  font-size: 2.05rem;
+  line-height: 1.26;
+}
+.slidev-layout blockquote::before { font-size: 1.7em; left: -0.5em; top: -0.04em; }
+.slidev-layout blockquote p:last-child {
+  font-size: 0.6em;
+  color: var(--ink-soft);
+  font-weight: 600;
+  margin-top: 0.7em;
+}
+.slidev-layout blockquote p:only-child { font-size: inherit; color: inherit; font-weight: inherit; }
+
+/* --- Two-column slides: vertically centered, images keep aspect (19,48,50,53 + all) --- */
+.slidev-layout.grid-cols-2,
+.slidev-layout .grid-cols-2.slidev-two-cols,
+.slidev-layout.two-cols > .grid {
+  align-items: center;
+}
+.slidev-layout.two-cols .col-left,
+.slidev-layout.two-cols .col-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.slidev-layout.two-cols img {
+  height: auto !important;
+  max-height: 80vh;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+/* --- Annotated prompt notes: large, numbered, distributed (40,43,45) --- */
+.slidev-layout.prompt .pnotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 0.5rem;
+  padding: 0.1rem 0;
+}
+.slidev-layout.prompt .pnote {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+.slidev-layout.prompt .pnote .pn {
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--term-bg);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.1rem;
+}
+.slidev-layout.prompt .pnote p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.34;
+  max-width: none;
+}
+.slidev-layout.prompt .pnote b,
+.slidev-layout.prompt .pnote strong { color: var(--ink); font-weight: 650; }
+.slidev-layout.prompt .grid { grid-template-columns: 1.5fr 1fr !important; }
+.slidev-layout.prompt { padding-bottom: 1.6rem; }
+
+/* Prompt panel: fixed height so font size controls fill, not panel growth */
+.slidev-layout.prompt .grid {
+  height: calc(100% - 3.6rem);
+  align-items: stretch;
+}
+.slidev-layout.prompt pre { height: 100%; }
+.slidev-layout.prompt .pnotes { height: 100%; }
+
+/* Prompt grid: definite single row so panels fill exactly (no slide overflow) */
+.slidev-layout.prompt .grid {
+  grid-template-columns: 1.5fr 1fr !important;
+  grid-template-rows: minmax(0, 1fr) !important;
+  height: calc(100% - 2.4rem) !important;
+  gap: 1.3rem !important;
+  align-items: stretch !important;
+}
+.slidev-layout.prompt .grid > div {
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.slidev-layout.prompt pre { height: 100% !important; }
+.slidev-layout.prompt .pnotes { height: 100%; overflow: hidden; }
+
+/* Blockquote must sit on the light canvas, not a dark box (19, 53) */
+.slidev-layout blockquote,
+.slidev-layout blockquote p {
+  background: transparent !important;
+  color: var(--ink) !important;
+  border: 0 !important;
+}
+.slidev-layout blockquote p:last-child {
+  color: var(--ink-soft) !important;
+}
